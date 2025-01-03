@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Bookstore</title>
+</head>
+<body>
+    <h1>Online Bookstore</h1>
+    <a href="?action=add">Add Book</a><br>
+    <a href="?action=view">View Books</a><br>
+    <form action="?action=delete" method="POST">
+        <label for="id">Book ID to Delete:</label>
+        <input type="text" id="id" name="id">
+        <button type="submit">Delete Task</button>
+    </form>
+    <form action="searchTask" method="GET">
+        <label for="title">Search by Title:</label>
+        <input type="text" id="title" name="title">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
